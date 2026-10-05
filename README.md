@@ -4,28 +4,42 @@ A redesigned, animated homepage for [tis.edu.in](https://tis.edu.in/). The origi
 
 **Stack:** Next.js 14 (App Router) · React 18 · TypeScript · Tailwind CSS 3 · Framer Motion 11
 
+**Public repository:** [github.com/Prudhvi984/tis-redesign](https://github.com/Prudhvi984/tis-redesign)
+
 ---
 
-## Setup
+## Run locally
 
-**Prerequisites:** Node.js 18.17 or newer (LTS recommended) and npm.
+**Prerequisites:** Node.js 18.17 or newer and npm.
 
 ```bash
-# 1. install dependencies
-npm install
+npm ci
 
-# 2. start the dev server → http://localhost:3000
+# Start the development server at http://localhost:3000
 npm run dev
+```
 
-# 3. production build and preview
+To verify and run a production build locally:
+
+```bash
 npm run build
 npm start
+```
 
-# optional: lint
+Run the linter with:
+
+```bash
 npm run lint
 ```
 
-**Deploy:** push to GitHub, import the repo at [vercel.com](https://vercel.com) and click Deploy. No environment variables are needed.
+## Deploy to Vercel
+
+1. Sign in to [Vercel](https://vercel.com) with GitHub.
+2. Choose **Add New → Project** and import [`Prudhvi984/tis-redesign`](https://github.com/Prudhvi984/tis-redesign).
+3. Keep the automatically detected Next.js settings and select **Deploy**.
+4. Once the deployment completes, Vercel provides a URL for the live site.
+
+No environment variables or custom build settings are required. Vercel will create a new deployment when changes are pushed to the connected GitHub repository.
 
 ---
 
